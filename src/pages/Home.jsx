@@ -27,7 +27,7 @@ export const Home = () => {
 						key={character._id || index}
 						name={character.properties.name}
 						hair_color={character.properties.hair_color} // information at the beggining at the map is what i need to refered to
-
+						id={character.uid}
 					/>))}
 
 			</div>
@@ -35,13 +35,14 @@ export const Home = () => {
 				{store.planets.map((planet) => ( // react requires a unique prop!!! remember for list of elements to track changes efficiently. it priotizes the datebase id, falling back to the array index if necesary
 					<PlanetCard
 						key={planet._id || index}// information at the beggining at the map is what i need to refered to
-						name={planet.properties.name} //
+						name={planet.properties.name}
+						id={planet.uid}
 					/>))}
 
 			</div>
 			<div>Learn more</div>
 		</div>
 	);
- 
+
 };
 // data.result.properties.name
