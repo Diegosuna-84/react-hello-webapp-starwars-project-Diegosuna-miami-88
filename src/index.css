@@ -1,6 +1,6 @@
-.logo{
- width :10rem;
- height: 5rem;
+.logo {
+    width: 10rem;
+    height: 5rem;
 
 }
 
@@ -10,12 +10,14 @@ body {
 }
 
 .cardStyle {
-    width: 18rem;
-    height: 20rem;
+    
+    height: 25rem;
     margin: 1rem auto;
     padding: 1rem;
 }
-.img-thumbnail{
+
+.img-thumbnail {
     width: 10rem;
     height: 10rem;
 }
+

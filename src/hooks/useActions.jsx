@@ -32,12 +32,22 @@ const useActions = () => {
         dispatch({ type: "update_planets", payload: data.results }
         ); return data
     };
+    const getSpecies = async () => {
+        const response = await fetch("https://www.swapi.tech/api/species/?expanded=true")
 
 
+        if (!response.ok) {
+            console.log("error ', Response. status, response.statusText");
+            return;
+        }
+        const data = await response.json();
+        console.log(data.results)
+        dispatch({ type: "update_species", payload: data.results }
+        ); return data
+    };
 
-    return { getCharacters, getPlanets }
+    return { getCharacters, getPlanets, getSpecies }
 
-    
 
    
 }
