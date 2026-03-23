@@ -10,7 +10,8 @@ body {
 }
 
 .cardStyle {
-    
+    background-color: grey;
+    border: 1px solid red;
     height: 25rem;
     margin: 1rem auto;
     padding: 1rem;

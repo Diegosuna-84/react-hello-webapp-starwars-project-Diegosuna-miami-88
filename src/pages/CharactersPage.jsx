@@ -19,14 +19,17 @@ export const CharactersPage = ({ }) => {
         }
     })
     return (
-        <div className="containercardStyle text-center mt-5">
-            <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${id}.jpg?raw=true`} className="img-thumbnail img-fluid rounde placeholder" alt={`No image found for ${name}`}></img>
-            <h1>Name: {character.name}</h1>
-            <h1>gender: {character.gender}</h1>
-            <h1> Hair Color: {character.hair_color}</h1>
-            <h1>eye_color: {character.eye_color}</h1>
-            <h1>Birth Year: {character.birth_year}</h1>
-            <h1>Mass: {character.mass}</h1>
-        </div>
+        <div className="container border boder-rounded  text-center mt-4">
+            <div className="row mt-5">
+                <div className="col-4">
+                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${id}.jpg?raw=true`} className="img-thumbnail mt-5 img-fluid rounde placeholder" alt={`No image found for ${name}`}></img></div>
+                <div className="col-4 mt-5">
+                    <h1 className="text-light border-bottom border-danger">Name: {character.name}</h1>
+                    <h1 className="text-light border-bottom border-danger">gender: {character.gender}</h1>
+                    <h1 className="text-light border-bottom border-danger"> Hair Color: {character.hair_color}</h1>
+                    <h1 className="text-light border-bottom border-danger">eye_color: {character.eye_color}</h1>
+                    <h1 className="text-light border-bottom border-danger">Birth Year: {character.birth_year}</h1>
+                    <h1 className="text-light border-bottom border-danger">Mass: {character.mass}</h1></div>
+            </div></div>
     )
 }

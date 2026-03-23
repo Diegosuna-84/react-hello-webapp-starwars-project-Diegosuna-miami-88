@@ -13,7 +13,7 @@ const { store, dispatch } = useGlobalReducer();
 			<img className="logo" src="src/assets/img/starwarslogo.png"></img>
 			<div className="container">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">Home</span>
+					<span className="navbar-brand h1">Home</span>
 				</Link>
 				<div className="ml-auto">
 											<li className="nav-item dropdown">

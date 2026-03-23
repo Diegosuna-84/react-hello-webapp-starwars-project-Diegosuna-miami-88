@@ -22,7 +22,7 @@ export const Home = () => {
 
 
 	return ( // the root of the container for your components UI 
-		<div className="container text-center d-flex flex-column">
+		<div className="container mt-5">
 			<div className="row d-flex flex-nowrap text-center mt-5 overflow-x-scroll">
 				{store.characters.map((character) => ( // react requires a unique prop!!! remember for list of elements to track changes efficiently. it priotizes the datebase id, falling back to the array index if necesary
 					<StarWarsCharacterCard
@@ -39,6 +39,7 @@ export const Home = () => {
 					<PlanetCard
 						key={planet._id || index}// information at the beggining at the map is what i need to refered to
 						name={planet.properties.name}
+						population={planet.properties.population}
 						id={planet.uid}
 					/>))}
 
