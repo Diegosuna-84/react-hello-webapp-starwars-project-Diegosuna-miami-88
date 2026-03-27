@@ -19,9 +19,9 @@ export const StarWarsCharacterCard = ({ name, hair_color, birth_year, id }) => {
 
                 </div>
                 <Link to={`/characters/${id}`}>
-                <button>Learn more</button>
+                <button className="btn btn-dark mb-2">Learn more</button>
                 </Link>
-                <button className="btn btn-warning" onClick={() => dispatch({ type: "toggle_favorite", payload: { name: name, uid: id, kind: "characters"} })}>Heart</button>
+                <button className="btn btn-primary" onClick={() => dispatch({ type: "toggle_favorite", payload: { name: name, uid: id, kind: "characters"} })}>Heart</button>
             </div>
         </>
     );

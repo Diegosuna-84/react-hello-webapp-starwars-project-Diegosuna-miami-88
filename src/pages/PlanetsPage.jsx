@@ -19,7 +19,7 @@ export const PlanetsPage = ({ }) => {
         }
     })
     return (
-        <div className="container border boder-rounded  text-center mt-4">
+        <div className="container border boder-rounded border border-danger text-center mt-4">
             <div className="row mt-5">
                 <div className="col-4">
                     <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/${id}.jpg?raw=true`} className="img-thumbnail img-fluid rounde placeholder" alt="..."></img></div>
