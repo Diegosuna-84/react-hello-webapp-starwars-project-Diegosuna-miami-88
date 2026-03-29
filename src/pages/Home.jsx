@@ -23,7 +23,7 @@ export const Home = () => {
 
 	return ( // the root of the container for your components UI 
 		<div className="container mt-5 border border-danger">
-			<div className="row d-flex flex-nowrap text-center mt-5 overflow-x-scroll border border-danger">
+			<div className="row d-flex flex-nowrap border border-danger mt-5 overflow-x-scroll border">
 				{store.characters.map((character) => ( // react requires a unique prop!!! remember for list of elements to track changes efficiently. it priotizes the datebase id, falling back to the array index if necesary
 					<StarWarsCharacterCard
 						key={character._id || index}// information at the beggining at the map is what i need to refered to
@@ -34,7 +34,7 @@ export const Home = () => {
 					/>))}
 
 			</div>
-			<div className="row d-flex flex-nowrap text mt-5 overflow-x-scroll border border-danger">
+			<div className="row d-flex flex-nowrap text mt-5 border-danger overflow-x-scroll border ">
 				{store.planets.map((planet) => ( // react requires a unique prop!!! remember for list of elements to track changes efficiently. it priotizes the datebase id, falling back to the array index if necesary
 					<PlanetCard
 						key={planet._id || index}// information at the beggining at the map is what i need to refered to
@@ -45,7 +45,7 @@ export const Home = () => {
 					/>))}
 
 			</div>
-			<div className="row d-flex flex-nowrap text mt-5 overflow-x-scroll border border-danger">
+			<div className="row d-flex flex-nowrap text mt-5 border-danger overflow-x-scroll border">
 				{store.species.map((species) => (
 					<SpeciesCard
 						key={species._id || index}

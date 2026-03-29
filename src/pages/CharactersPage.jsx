@@ -22,8 +22,8 @@ export const CharactersPage = ({ }) => {
         <div className="container border boder-rounded border border-danger text-center mt-4">
             <div className="row mt-5">
                 <div className="col-4">
-                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${id}.jpg?raw=true`} className="img-thumbnail mt-5 img-fluid rounde placeholder" alt={`No image found for ${name}`}></img></div>
-                <div className="col-4 mt-5">
+                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${id}.jpg?raw=true`} className="rounded cardImage float-start mb-5 img-fluid rounde placeholder" alt={`No image found for ${name}`}></img></div>
+                <div className="container textStyle col-5 mt-5">
                     <h1 className="text-light border-bottom border-danger">Name: {character.name}</h1>
                     <h1 className="text-light border-bottom border-danger">gender: {character.gender}</h1>
                     <h1 className="text-light border-bottom border-danger"> Hair Color: {character.hair_color}</h1>

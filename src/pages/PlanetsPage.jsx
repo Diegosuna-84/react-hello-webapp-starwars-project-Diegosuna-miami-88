@@ -22,13 +22,15 @@ export const PlanetsPage = ({ }) => {
         <div className="container border boder-rounded border border-danger text-center mt-4">
             <div className="row mt-5">
                 <div className="col-4">
-                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/${id}.jpg?raw=true`} className="img-thumbnail img-fluid rounde placeholder" alt="..."></img></div>
-                <div className="col-4 mt-5">
+                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/${id}.jpg?raw=true`} className="rounded cardImage float-start mb-5 img-fluid rounde placeholder" alt="..."></img></div>
+                <div className="container textStyle col-6 mt-5">
                     <h1 className="text-light border-bottom border-danger">Name: {planet.name}</h1>
                     <h1 className="text-light border-bottom border-danger">Population: {planet.population}</h1>
                     <h1 className="text-light border-bottom border-danger">Climate: {planet.climate}</h1>
-                    <h1 className="text-light border-bottom border-danger">gravity: {planet.gravity}</h1>
-                    <h1 className="text-light border-bottom border-danger">diameter: {planet.diameter}</h1></div>
+                    <h1 className="text-light border-bottom border-danger">Gravity: {planet.gravity}</h1>
+                    <h1 className="text-light border-bottom border-danger">Diameter: {planet.diameter}</h1>
+                    <h1 className="text-light border-bottom border-danger">Rotation Period: {planet.rotation_period}</h1>
+                    </div>
             </div></div>
     )
 }

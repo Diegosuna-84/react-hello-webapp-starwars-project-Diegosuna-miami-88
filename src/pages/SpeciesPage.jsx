@@ -21,11 +21,13 @@ export const SpeciesPage = ({ }) => {
         <div className="container border boder-rounded border border-danger text-center mt-4">
             <div className="row mt-5">
                 <div className="col-4">
-                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/species/${id}.jpg?raw=true`} className="img-thumbnail img-fluid rounde placeholder" alt={`No image found for ${name}`}></img></div>
-                <div className="col-4 mt-5">
+                    <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/species/${id}.jpg?raw=true`} className="rounded cardImage float-start mb-5 img-fluid rounde placeholder" alt={`No image found for ${name}`}></img></div>
+                <div className="container textStyle col-8 mt-5">
                     <h1 className="text-light border-bottom border-danger">Name: {species.name}</h1>
                     <h1 className="text-light border-bottom border-danger">Classification: {species.classification}</h1>
-                    <h1 className="text-light border-bottom border-danger">Language: {species.language}</h1></div>
+                    <h1 className="text-light border-bottom border-danger">Language: {species.language}</h1>
+                    <h1 className="text-light border-bottom border-danger">Skin Colors: {species.skin_colors}</h1>
+                    <h1 className="text-light border-bottom border-danger">Average Lifespan: {species.average_lifespan} Ys</h1></div>
             </div></div>
     )
 }
